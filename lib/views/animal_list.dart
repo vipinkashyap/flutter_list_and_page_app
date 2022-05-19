@@ -30,10 +30,6 @@ class AnimalList extends StatelessWidget {
                         padding: const EdgeInsets.all(20),
                         child: GestureDetector(
                           onTap: () {
-                            //Dispatch tap event
-                            context
-                                .read<AnimalBloc>()
-                                .add(ItemTapped(index: index));
                             // Push to new page and provide the bloc
                             Navigator.of(context).push(MaterialPageRoute(
                                 settings: RouteSettings(

@@ -15,6 +15,5 @@ class AnimalBloc extends Bloc<AnimalEvent, AnimalState> {
       var animalData = await _zooRepository.fetchData();
       emit(AnimalLoaded(animals: animalData, index: 0));
     });
-    on<ItemTapped>((event, emit) {});
   }
 }

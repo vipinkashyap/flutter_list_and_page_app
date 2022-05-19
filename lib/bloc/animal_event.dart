@@ -8,9 +8,3 @@ abstract class AnimalEvent extends Equatable {
 }
 
 class DataFetch extends AnimalEvent {}
-
-class ItemTapped extends AnimalEvent {
-  final int index;
-
-  const ItemTapped({required this.index});
-}
